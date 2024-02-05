@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contenido</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagenes/logo_itm.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo_itm.png" alt="ITM" class="logo">
+        <!-- Botón para desplegar el menú -->
+    <button class="menu-btn" onclick="Inicio()">Volver al  inicio</button>
+    
+    
+    <script src="js/script.js"></script>
+    </header>
+    <main class="content">
+    
+    <div id="contenido1" class="contenido">
+        <iframe id="video1" src="https://www.youtube.com/embed/XmTyNrDx2uc?si=vOKH-PZfgcBOSTiy" frameborder="0" allowfullscreen></iframe>
+        
+       
+    </div>
+
+    <div id="contenido2" class="contenido" style="display:none;">
+        <iframe id="video2" src="https://www.youtube.com/embed/JHrlmCKaquQ?si=OS5gjmCJS_KOWHo_" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+
+    <div id="contenido3" class="contenido" style="display:none;">
+        <iframe id="video3" src="https://www.youtube.com/embed/-8LgyIH3js0?si=tlTMF5Zv7Bw0yF8T" frameborder="0" allowfullscreen></iframe>
+       
+    </div>
+    
+    <div id="contenido4" class="contenido" style="display:none;">
+        <iframe id="video4" src="https://www.youtube.com/embed/5nNnuFc6fkA?si=jGn3XQXKUQtTXjG1" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    <div>
+    
+    <a id="pdfLink" href="#" target="_blank" download=" pdf/FDBD0_U2.pdf" style="display: none;">Descargar PDF con ejemplos y mas temas del modelo entidad -relación</a>
+    <a id="pdfLink" href="#"href=" http://dia-installer.de/" target="_blank">Instalación de la herramienta día para crear el modelo entidad-relación</a>
+
+    </div>
+    <div id="menu">
+        <h2>Entidad - Relación</h2>
+        <ul>
+            <li><a href="#" class="link" onclick="cambiarContenido(1); return false;">Modelo entidad relación</a></li>
+            <li><a href="#" class="link" onclick="cambiarContenido(2); return false;">Entidades</a></li>
+            <li><a href="#" class="link" onclick="cambiarContenido(3); return false;">Atributos</a></li>
+            <li><a href="#" class="link" onclick="cambiarContenido(4); return false;">Relaciones</a></li>
+            
+        </ul>
+    </div>
+    
+</main>
+    <script src="js/script.js"></script>
+</body>
+</html>
